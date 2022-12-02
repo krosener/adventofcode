@@ -3,7 +3,7 @@ This is a driver for all of the advent of code 2022 problems
 Created by krosener, mostly to get some of my code back onto github
 """
 
-day1()
+day2()
 
 func day1() {
     let problem = "01"
@@ -14,4 +14,11 @@ func day1() {
     print(answer2)
 }
 
-
+func day2() {
+    let problem = "02"
+    let input = ResourceReader.shared.readInputForProblem(problem)
+    let answer = RPSScoreCounter.countP1Score(input)
+    print(answer)
+    let answer2 = RPSScoreCounter.countP2Score(input)
+    print(answer2)
+}
