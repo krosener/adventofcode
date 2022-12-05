@@ -3,7 +3,7 @@ This is a driver for all of the advent of code 2022 problems
 Created by krosener, mostly to get some of my code back onto github
 """
 
-day2()
+day3()
 
 func day1() {
     let problem = "01"
@@ -20,5 +20,14 @@ func day2() {
     let answer = RPSScoreCounter.countP1Score(input)
     print(answer)
     let answer2 = RPSScoreCounter.countP2Score(input)
+    print(answer2)
+}
+
+func day3() {
+    let problem = "03"
+    let input = ResourceReader.shared.readInputForProblem(problem)
+    let answer = RucksackReorganizer.p1GetPriorities(input)
+    print(answer)
+    let answer2 = RucksackReorganizer.p2GetBadges(input)
     print(answer2)
 }
