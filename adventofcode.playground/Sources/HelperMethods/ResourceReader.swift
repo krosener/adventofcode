@@ -9,4 +9,8 @@ public class ResourceReader {
         guard let input = String(data: input_data, encoding: .ascii) else {return ""}
         return input
     }
+    
+    public func arrayInputForProblem(_ problem:String) -> [String] {
+        return readInputForProblem(problem).split(separator: "\n").map {String($0)}
+    }
 }
