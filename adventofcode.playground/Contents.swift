@@ -3,7 +3,7 @@ This is a driver for all of the advent of code 2022 problems
 Created by krosener, mostly to get some of my code back onto github
 """
 
-day5()
+day6()
 
 func day1() {
     let problem = "01"
@@ -47,5 +47,14 @@ func day5() {
     let answer = CrateMover.p1MoveCrates(input)
     print(answer)
     let answer2 = CrateMover.p2MoveCrates(input)
+    print(answer2)
+}
+
+func day6() {
+    let problem = "06"
+    let input = ResourceReader.shared.readInputForProblem(problem)
+    let answer = SignalFinder.p1GetStartOfPacket(input)
+    print(answer)
+    let answer2 = SignalFinder.p2GetStartOfMessage(input)
     print(answer2)
 }
