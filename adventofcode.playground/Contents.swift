@@ -3,7 +3,7 @@ This is a driver for all of the advent of code 2022 problems
 Created by krosener, mostly to get some of my code back onto github
 """
 
-day4()
+day5()
 
 func day1() {
     let problem = "01"
@@ -38,5 +38,14 @@ func day4() {
     let answer = AssignmentOptimizer.p1GetOverlap(input)
     print(answer)
     let answer2 = AssignmentOptimizer.p2GetAnyOverlap(input)
+    print(answer2)
+}
+
+func day5() {
+    let problem = "05"
+    let input = ResourceReader.shared.arrayInputForProblem(problem)
+    let answer = CrateMover.p1MoveCrates(input)
+    print(answer)
+    let answer2 = CrateMover.p2MoveCrates(input)
     print(answer2)
 }
