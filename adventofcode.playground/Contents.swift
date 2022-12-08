@@ -3,7 +3,7 @@ This is a driver for all of the advent of code 2022 problems
 Created by krosener, mostly to get some of my code back onto github
 """
 
-day6()
+day7()
 
 func day1() {
     let problem = "01"
@@ -56,5 +56,15 @@ func day6() {
     let answer = SignalFinder.p1GetStartOfPacket(input)
     print(answer)
     let answer2 = SignalFinder.p2GetStartOfMessage(input)
+    print(answer2)
+}
+
+func day7() {
+    let problem = "07"
+    let input = ResourceReader.shared.arrayInputForProblem(problem)
+    let edf = ElfDeleteFolder(input)
+    let answer = edf.p1FindSumOfSmallFolders()
+    print(answer)
+    let answer2 = edf.p2FindSmallestDirToDelete()
     print(answer2)
 }
