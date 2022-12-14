@@ -3,7 +3,7 @@ This is a driver for all of the advent of code 2022 problems
 Created by krosener, mostly to get some of my code back onto github
 """
 
-day7()
+day8()
 
 func day1() {
     let problem = "01"
@@ -66,5 +66,15 @@ func day7() {
     let answer = edf.p1FindSumOfSmallFolders()
     print(answer)
     let answer2 = edf.p2FindSmallestDirToDelete()
+    print(answer2)
+}
+
+func day8() {
+    let problem = "08"
+    let input = ResourceReader.shared.arrayInputForProblem(problem)
+    let calculator = THVisibleCalculator(input)
+    let answer = calculator.p1CountVisibleTrees()
+    print(answer)
+    let answer2 = calculator.p2CountScenicScores()
     print(answer2)
 }
