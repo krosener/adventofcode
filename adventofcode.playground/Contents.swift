@@ -3,7 +3,7 @@ This is a driver for all of the advent of code 2022 problems
 Created by krosener, mostly to get some of my code back onto github
 """
 
-day8()
+day9()
 
 func day1() {
     let problem = "01"
@@ -76,5 +76,19 @@ func day8() {
     let answer = calculator.p1CountVisibleTrees()
     print(answer)
     let answer2 = calculator.p2CountScenicScores()
+    print(answer2)
+}
+
+func day9() {
+    
+}
+
+func day10() {
+    let problem = "10"
+    let input = ResourceReader.shared.arrayInputForProblem(problem)
+    let fixer = ElfCPUFixer(processor: ElfProcessor())
+    //let answer = fixer.p1FindSignalSums(input)
+    //print(answer)
+    let answer2 = fixer.p2DrawCharacters(input)
     print(answer2)
 }
